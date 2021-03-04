@@ -1,9 +1,49 @@
 .banner {
   text-align: center;
-  padding-top: 15vh;
-  height: 50vh;
+  padding-top: 18vh;
+  height: 88vh;
+  position: relative;
 }
 
 .banner h4 {
   color: #123C69;
+}
+
+img {
+  width: 50%;
+  padding-top: 65px;
+}
+
+hr {
+  border:none;
+ 	width: 53%;
+	height: 50px;
+	margin-top: 0;
+	border-bottom: 1px solid #EDC7B7;
+	box-shadow: 0 20px 20px -20px #aa8c80;
+  margin: -50px auto 10px;
+}
+
+
+// typewriting
+
+.typewriter h1 {
+  overflow: hidden;
+  border-right: .10em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .10em;
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 40% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #EDC7B7; }
 }

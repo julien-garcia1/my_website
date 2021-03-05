@@ -4,6 +4,8 @@ nav {
   margin: 0 auto;
   top: 0px;
   padding: 20px;
+  z-index: 1;
+  height: 87px;
 }
 
 nav ul {
@@ -18,4 +20,13 @@ nav ul {
   color: white;
   border-radius: 10px;
   padding: 10px 30px;
+}
+
+.regular-menu-item {
+  padding-top: 10px;
+}
+
+.scroll-navbar {
+  transition: 2s;
+  background: white;
 }

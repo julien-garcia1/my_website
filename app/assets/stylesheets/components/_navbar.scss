@@ -5,14 +5,16 @@ nav {
   top: 0px;
   padding: 20px;
   z-index: 1;
-  height: 87px;
+  height: 68px;
+  display: flex;
+  justify-content: space-around;
 }
 
-nav ul {
-  display: flex;
+nav li {
+  display: inline !important;
   list-style-type: none;
   justify-content: space-around;
-  padding-left: 0px !important;
+  margin-right: 40px;
 }
 
 #contact {
@@ -20,6 +22,7 @@ nav ul {
   color: white;
   border-radius: 10px;
   padding: 10px 30px;
+  margin-right: 0px;
 }
 
 .regular-menu-item {
@@ -29,4 +32,15 @@ nav ul {
 .scroll-navbar {
   transition: 2s;
   background: white;
+}
+
+#logo p {
+  font-size: 23px;
+  font-weight: bold;
+  color: rgb(44, 44, 44);
+}
+
+.active {
+  color: #AC3B61;
+  font-weight: 600;
 }

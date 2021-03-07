@@ -13,7 +13,9 @@ import "bootstrap";
 
 // Internal imports, e.g:
 import { navbarScroll } from '../components/navbar';
+import { activeClass } from '../components/activeMenu';
 
 document.addEventListener('turbolinks:load', () => {
   navbarScroll();
+  activeClass();
 });

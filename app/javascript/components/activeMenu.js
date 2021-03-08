@@ -1,12 +1,22 @@
-const activeClass = () => {
-  const buttons = document.querySelectorAll("button");
+const selectNavbarItem = document.querySelectorAll('#menu li a');
 
-  buttons.forEach(button => {
-    button.addEventListener('click', () => {
-      buttons.forEach(btn => btn.classList.remove('active'));
-      this.classList.add('active');
+const activeClass = () => {
+  selectNavbarItem.forEach(item => {
+    item.addEventListener('click', (e) => {
+      console.log(item.value);
+
+      removeActiveClass();
+      item.classList.add('active');
+      e.preventDefault();
+      window.location.hash = '#test';
     })
   })
-}
+};
+
+const removeActiveClass = () => {
+  selectNavbarItem.forEach(item => {
+    item.classList.remove('active');
+  })
+};
 
 export { activeClass };

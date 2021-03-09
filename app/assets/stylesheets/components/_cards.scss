@@ -22,3 +22,17 @@ ul {
   color: grey;
   padding: 25px 0px;
 }
+
+// card projects
+
+.card-projects {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-project {
+  background-color: white;
+  box-shadow: 8px 8px 12px white;
+  height: 300px;
+  width: 30%;
+}

@@ -1,4 +1,3 @@
-// Specific CSS for your home-page
 .presentation-section {
   text-align: center;
   padding-top: 60px;
@@ -17,4 +16,11 @@
   z-index: 1;
   position: relative;
   top: 340px;
+}
+
+.portfolio-section {
+  position: relative;
+  top: 400px;
+  text-align: center;
+  height: 430px;
 }

@@ -3,17 +3,16 @@ const selectNavbarItem = document.querySelectorAll('#menu li a');
 const activeClass = () => {
   selectNavbarItem.forEach(item => {
     item.addEventListener('click', (e) => {
-      console.log(item.value);
-
-      removeActiveClass();
+      const urlHash = item.innerHTML.toLowerCase();
+      clearActiveClass();
       item.classList.add('active');
       e.preventDefault();
-      window.location.hash = '#test';
+      window.location.hash = '#' + urlHash;
     })
   })
 };
 
-const removeActiveClass = () => {
+const clearActiveClass = () => {
   selectNavbarItem.forEach(item => {
     item.classList.remove('active');
   })

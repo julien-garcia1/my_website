@@ -1,16 +1,24 @@
 .cards {
   display: flex;
-  justify-content: space-between;
+  box-shadow: 0 5px 5px 0 #f3edea;
 }
 
 .card {
   background: #EEE2DC;
-  box-shadow: 5px 5px 12px rgb(212, 157, 129);
-  border-radius: 10px;
   padding: 15px;
-  width: 30%;
+  width: 33.3%;
   height: auto;
   text-align: center;
+}
+
+#left-card {
+  border-radius: 10px 0px 0px 10px;
+  border-right: solid 1px rgb(192, 192, 192);
+}
+
+#right-card {
+  border-radius: 0px 10px 10px 0px;
+  border-left: solid 1px rgb(192, 192, 192);
 }
 
 ul {
